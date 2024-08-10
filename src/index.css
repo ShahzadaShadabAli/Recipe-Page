@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'young';
+    src: url('../public/assets/fonts/young.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url('../public/assets/fonts/outfit.ttf') format('truetype'),
+}
+
+.font-young {
+    font-family: 'young';
+}
+
+.font-outfit {
+    font-family: "outfit";
+    font-weight: 400;
+}
+
+.font-outfit-semibold {
+    font-family: "outfit";
+    font-weight: 600;
+}
+
+.font-outfit-bold {
+    font-family: "outfit";
+    font-weight: 700;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type:decimal;
+}
+
+ul li::marker {
+    font-size: .7rem;
+}
+
+ol li::marker {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "outfit";
+}
+.second-list li::marker {
+    color: #8d412a;
+}
