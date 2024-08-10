@@ -1,13 +1,14 @@
 function App() {
   return (
     <main className="w-full bg-[#f3e6d8] flex justify-center items-center">
-      <div className="w-[46.2rem] my-[7.5rem] rounded-[25px] p-10 bg-white">
+      <div className="w-[46.2rem] max-md:w-full max-md:leading-10 my-[7.5rem] max-md:p-0 max-md:m-0 max-md:rounded-none rounded-[25px] p-10 bg-white">
         <img
           src="/assets/images/image-omelette.jpeg"
           className="rounded-xl"
           alt=""
         />
-        <h1 className="font-young text-[2.5rem] text-stone-800 mt-7">
+        <div className="max-md:px-8">
+        <h1 className="font-young text-[2.5rem] text-stone-800 mt-7 max-md:text-[2rem]">
           Simple Omelette Recipe
         </h1>
         <p className="font-outfit text-stone-600 my-3">
@@ -18,13 +19,13 @@ function App() {
         <section className="bg-[#fff5fa] text-[#883153] rounded-xl p-6 pl-7 mt-8">
           <h1 className="font-outfit-bold text-xl mb-2">Preparation time</h1>
           <ul className="ml-[1.45rem] mt-[.9rem]">
-            <li className="mt-[.55rem]">
+            <li className="mt-[.55rem] max-sm:mt-0">
               <p className="text-stone-600 ml-4 font-outfit text-md">
                 <span className=" font-outfit-bold">Total: </span>Approximately
                 10 minutes
               </p>
             </li>
-            <li className="mt-[.55rem]">
+            <li className="mt-[.55rem] max-sm:mt-0">
               <p className="text-stone-600 ml-4 font-outfit text-md">
                 <span className="text-stone-600  font-outfit-bold">
                   Preparation:{" "}
@@ -32,7 +33,7 @@ function App() {
                 5 minutes
               </p>
             </li>
-            <li className="mt-[.55rem]">
+            <li className="mt-[.55rem] max-sm:mt-0">
               <p className="text-stone-600 ml-4 font-outfit text-md">
                 <span className="text-stone-600  font-outfit-bold">
                   Cooking:{" "}
@@ -46,27 +47,27 @@ function App() {
           Ingredients
         </h1>
         <ul className="ml-[1.45rem] mt-[.9rem] second-list">
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               2-3 large eggs
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               Salt, to taste
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               Pepper, to taste
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               1 tablespoon of butter or oil
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               Optional fillings: cheese, diced vegetables, cooked meat, herbs
             </p>
@@ -77,32 +78,32 @@ function App() {
           Instructions
         </h1>
         <ol className="ml-[1.45rem] mt-[.9rem] second-list">
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               <span className=" font-outfit-bold">Beat the eggs: </span>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for flufflier texture.
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               <span className=" font-outfit-bold">Heat the pan: </span>Place a non-stick frying pan over medium heat and add butter or oil.
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               <span className=" font-outfit-bold">Cook the omelette: </span>Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               <span className=" font-outfit-bold">Add fillings (optional): </span>When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               <span className=" font-outfit-bold">Fold and serve: </span>As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
             </p>
           </li>
-          <li className="mt-[.55rem]">
+          <li className="mt-[.55rem] max-sm:mt-0">
             <p className="text-stone-600 ml-4 font-outfit text-md">
               <span className=" font-outfit-bold">Enjoy: </span>Serve hot, with additional salt and pepper if needed.
             </p>
@@ -131,9 +132,10 @@ function App() {
           <p className="font-outfit-bold pl-2 text-[#8d412a]">20g</p>
         </div>
         <hr className="my-1" />
-        <div className="grid grid-cols-2 text-[1rem] p-2 pb-0">
+        <div className="grid grid-cols-2 text-[1rem] p-2 pb-0 max-md:pb-12">
           <p className="font-outfit text-stone-600 pl-6">Fat</p>
           <p className="font-outfit-bold pl-2 text-[#8d412a]">22g</p>
+        </div>
         </div>
       </div>
     </main>
